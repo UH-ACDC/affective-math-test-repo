@@ -1,49 +1,63 @@
-# History files
+# =========================
+# macOS
+# =========================
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+
+# =========================
+# R / RStudio
+# =========================
 .Rhistory
 .Rapp.history
-
-# Session Data files
 .RData
-.RDataTmp
-
-# User-specific files
 .Ruserdata
-
-# Example code in package build process
-*-Ex.R
-
-# Output files from R CMD build
-/*.tar.gz
-
-# Output files from R CMD check
-/*.Rcheck/
-
-# RStudio files
 .Rproj.user/
 
-# produced vignettes
-vignettes/*.html
-vignettes/*.pdf
+# If you use RStudio project files, keep the .Rproj tracked:
+# (do NOT ignore *.Rproj unless you want to)
+# *.Rproj
 
-# OAuth2 token, see https://github.com/hadley/httr/releases/tag/v0.3
-.httr-oauth
+# =========================
+# R CMD check / build
+# =========================
+.Rcheck/
+*.tar.gz
 
-# knitr and R markdown default cache directories
+# =========================
+# knitr / R Markdown
+# =========================
 *_cache/
-/cache/
-
-# Temporary files created by R markdown
+*/_cache/
 *.utf8.md
 *.knit.md
 
-# R Environment Variables
-.Renviron
+# =========================
+# Quarto
+# =========================
+.quarto/
+.quarto_cache/
 
-# pkgdown site
-docs/
+# =========================
+# renv (choose ONE approach)
+# =========================
+# If you use renv and want fully reproducible environments committed:
+#   - DO NOT ignore renv.lock
+#   - You MAY ignore the local library folder:
+renv/library/
+renv/python/
+renv/staging/
 
-# translation temp files
-po/*~
+# If you do NOT use renv, ignore the whole folder:
+# renv/
 
-# RStudio Connect folder
-rsconnect/
+# =========================
+# Logs / temp
+# =========================
+*.log
+*.tmp
+*.swp
+*~
